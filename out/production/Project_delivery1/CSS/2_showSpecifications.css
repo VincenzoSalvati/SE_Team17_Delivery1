@@ -1,0 +1,106 @@
+.nav {
+    background-color: black;
+    padding: 2em;
+    text-align: left;
+    height: 100px;
+}
+
+.navElem {
+    font-size: 32px;
+    color: white;
+    padding-left: 2em
+}
+
+.tableSpecifications {
+    border-spacing: 0;
+    width: 100%
+}
+
+.panel {
+    width: 30%;
+    margin-top: 1em;
+}
+
+.panelElem {
+    width: 50%;
+    margin: auto;
+    padding: 20px;
+}
+
+.panelElemIntDesc {
+    width: 40%;
+}
+
+.panelElemSkills {
+    width: 60%;
+
+}
+
+.panelElemSMP {
+    width: 30%;
+}
+
+.textCol {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.textRow {
+    font-size: 20px;
+}
+
+.image {
+    float: left;
+    padding-right: 2em;
+    clear: both
+}
+
+.textImage {
+    float: left;
+    padding-top: 1em;
+}
+
+.button {
+    border: none;
+    padding: 10px 3em;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.buttonEdit {
+    width: 15%;
+    margin: 0 auto;
+    background-color: black;
+    color: white;
+    display: block;
+    transition-duration: 0.5s;
+    font-weight: bold;
+}
+
+.buttonForward {
+    width: 20%;
+    margin: 0 auto;
+    background-color: black;
+    color: white;
+    display: block;
+    transition-duration: 0.5s;
+    font-weight: bold;
+}
+
+.buttonForward:hover {
+    background-color: orange;
+    border: 2px solid black;
+    color: black;
+}
+
+.buttonEdit:hover {
+    background-color: orange;
+    border: 2px solid black;
+    color: black;
+}
+
+body {
+    margin: 0;
+}

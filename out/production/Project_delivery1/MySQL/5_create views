@@ -1,0 +1,17 @@
+use project;
+
+drop VIEW skill_maintainer_view;
+drop VIEW skill_need_view;
+
+CREATE VIEW skill_maintainer_view AS
+SELECT m.name, m.id, c.skill
+FROM maintainer as m,
+     capacity as c
+WHERE m.id = c.maintainer;
+
+
+CREATE VIEW skill_need_view AS
+SELECT n.skill, n.specifications
+FROM need as n,
+     skill as s
+WHERE s.id = n.skill;

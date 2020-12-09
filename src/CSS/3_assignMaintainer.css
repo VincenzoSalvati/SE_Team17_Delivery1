@@ -1,0 +1,433 @@
+
+body {
+    margin-top: 100px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.maintainer {
+    width: 100%;
+}
+
+th, td {
+    padding: 10px;
+}
+
+.title {
+    font-family: sans-serif;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+}
+
+.intbox {
+    color: gray;
+    font-size: 1.4em;
+    float: left;
+    padding: 10px;
+    margin: 10px;
+}
+
+.topnav {
+    background: black;
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+nav ul {
+    list-style: none; /*spariranno le palline ad ogni riga*/
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+}
+
+
+/*Adesso modifichiamo le voci del menu*/
+nav ul li {
+    position: relative;
+    float: left;
+    width: 20%; /*In questo caso metto 20% poichè ho 5 voci nel menu, dunque 20%*5 = 100% */
+    text-align: center;
+}
+
+/*Adesso lavoriamo sulla pseudo classe hover, cioè ciò che accade quando passiamo sopra un 'ul'
+cioè quando passiamo sopra una voce del menu che nasconde un menu annidato, le voci annidate vengono rese visibili*/
+nav ul li:hover ul {
+    display: block;
+}
+
+/*Adesso interveniamo sui link, cioè sulle 'a' relative alle voci del menu*/
+nav ul li a {
+    display: block;
+    text-decoration: none; /*Cosi le voci non sono più sottolineate*/
+    color: #ffffff;
+    padding: 15px 25px;
+    font-size: 1.2em;
+    box-sizing: border-box;
+}
+
+
+/*NUOVA*/
+
+table, th, td {
+    background-color: rgb(255, 255, 255);
+    border: 0px solid black;
+    border-collapse: collapse;
+    text-size-adjust: 30px;
+}
+
+th, td {
+    padding: 15px;
+}
+
+.id-cell {
+    background-color: white;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(14, 123, 218);
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+.topnav {
+    font-size: 1.4em;
+    overflow: hidden;
+    height: 80px;
+    width: 100%;
+    background-color: black;
+
+}
+
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 24px 16px;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+
+.tabella {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.card {
+    border: 0;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    border-radius: 6px;
+    color: #333;
+    background: rgb(255, 255, 255);
+    width: 100%;
+    box-shadow: 0 2px 2px 0 0 4px 20px 0 rgba(0, 0, 0, .14), 0 7px 10px -5px rgba(255, 152, 0, .4);;
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, .14);
+}
+
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+}
+
+.card {
+    font-size: .875rem;
+}
+
+html * {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+    -webkit-tap-highlight-color: transparent;
+}
+
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+body {
+    color: #3c4858;
+    font-weight: 300;
+}
+
+.h1, .h2, .h3, .h4, body, h1, h2, h3, h4, h5, h6 {
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+    font-weight: 300;
+    line-height: 1.5em;
+}
+
+body {
+    font-size: 1rem;
+    text-align: left;
+}
+
+:root {
+    --blue: #2196f3;
+    --indigo: #3f51b5;
+    --purple: #9c27b0;
+    --pink: #e91e63;
+    --red: #f44336;
+    --orange: #ff9800;
+    --yellow: #ffeb3b;
+    --green: #4caf50;
+    --teal: #009688;
+    --cyan: #00bcd4;
+    --white: #ffffff;
+    --gray: #6c757d;
+    --gray-dark: #343a40;
+    --primary: #2196f3;
+    --secondary: #6c757d;
+    --success: #4caf50;
+    --info: #00bcd4;
+    --warning: #ffeb3b;
+    --danger: #f44336;
+    --light: #f8f9fa;
+    --dark: #343a40;
+    --breakpoint-xs: 0;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+    --font-family-sans-serif: "Roboto", "Helvetica", "Arial", sans-serif;
+    --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+html {
+    font-family: sans-serif;
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+}
+
+
+/*Secondo tag*/
+
+.card [class*="card-header-"]:not(.card-header-icon):not(.card-header-text):not(.card-header-image) {
+    border-radius: 3px;
+    margin-top: -20px;
+    padding: 15px;
+}
+
+.card .card-header-warning .card-icon, .card .card-header-warning .card-text, .card .card-header-warning:not(.card-header-icon):not(.card-header-text) {
+    box-shadow: 0 4px 20px 0 rgba(0, 0, 0, .14), 0 7px 10px -5px rgba(255, 152, 0, .4);
+}
+
+.card .card-header-warning .card-icon, .card .card-header-warning .card-text, .card .card-header-warning:not(.card-header-icon):not(.card-header-text), .card.bg-warning, .card.card-rotate.bg-warning .back, .card.card-rotate.bg-warning .front {
+    background: linear-gradient(60deg, #ffa726, #fb8c00);
+}
+
+.card [class*="card-header-"] {
+    margin: 0 15px;
+    margin-top: 0px;
+    padding: 0;
+    position: relative;
+}
+
+.card [class*="card-header-"], .card [class*="card-header-"] .card-title, .card [class*="card-header-"] .card-title a, .card [class*="card-header-"] .icon i, .card[class*="bg-"], .card[class*="bg-"] .card-title, .card[class*="bg-"] .card-title a, .card[class*="bg-"] .icon i {
+    color: #fff;
+}
+
+.card .card-header {
+    border-bottom: none;
+    background: 0 0;
+    z-index: 3 !important;
+}
+
+.card-header:first-child {
+    border-radius: calc(.25rem - 1px) calc(.25rem - 1px) 0 0;
+}
+
+.card-header {
+    padding: .75rem 1.25rem;
+    margin-bottom: 0;
+    background-color: #fff;
+    border-bottom: 1px solid #eee;
+}
+
+html * {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+    -webkit-tap-highlight-color: transparent;
+}
+
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+/*terzo tag*/
+
+.card .card-body {
+    padding: .9375rem 20px;
+    position: relative;
+}
+
+.card-body {
+    flex: 1 1 auto;
+    padding: 1.25rem;
+}
+
+.table-responsive {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+html * {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+    -webkit-tap-highlight-color: transparent;
+}
+
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+/*quarto tag*/
+
+.table {
+    width: 100%;
+    margin-bottom: 1rem;
+    color: #212529;
+}
+
+html * {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+* {
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+    -webkit-tap-highlight-color: transparent;
+}
+
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+/*quinto tag*/
+
+.text-warning {
+    color: #ff9800 !important;
+}
+
+html * {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+    -webkit-tap-highlight-color: transparent;
+}
+
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+/*sesto tag (th)*/
+
+.table thead th {
+    font-size: .95rem;
+    font-weight: 500;
+    border-top-width: 0;
+    border-bottom-width: 1px;
+}
+
+.table thead th {
+    vertical-align: bottom;
+    border-bottom: 2px solid rgba(0, 0, 0, .06);
+    border-bottom-width: 2px;
+}
+
+.table td, .table th {
+    padding: .75rem;
+    vertical-align: top;
+    border-top: 1px solid rgba(0, 0, 0, .06);
+    border-top-width: 1px;
+}
+
+html * {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+th {
+    text-align: inherit;
+}
+
+* {
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+    -webkit-tap-highlight-color: transparent;
+}
+
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+/*settimo tag (tbody)*/
+
+html * {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+    -webkit-tap-highlight-color: transparent;
+}
+
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+/*ottavo tag (tr del tbody)*/
+
+.table > tbody > tr {
+    position: relative;
+}
+
+html * {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+    -webkit-tap-highlight-color: transparent;
+}
+
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+
+
+

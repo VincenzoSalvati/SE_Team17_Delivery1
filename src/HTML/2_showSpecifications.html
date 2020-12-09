@@ -1,0 +1,131 @@
+<!--suppress CheckImageSize -->
+<html lang="en">
+
+<head>
+    <link href="../CSS/2_showSpecifications.css" rel="stylesheet" type="text/css">
+    <title>Show Specifications</title>
+</head>
+
+<body>
+
+<table class="tableSpecifications">
+    <thead>
+    <template id="specifications-row-template">
+        <tr class="nav">
+            <td>
+                <a class="navElem" id="strWeek">WEEK {Id}</a>
+            </td>
+            <td>
+                <a class="navElem" id="stringActivity">Activity to assign: {Id_activity}</a>
+            </td>
+            <td></td>
+        </tr>
+        <tr>
+            <th class="panel">
+                <div class="panelElem textCol">
+                    Workspace notes
+                </div>
+            </th>
+            <th class="panel panelIntDesc">
+                <div class="panelElem panelElemIntDesc textCol">
+                    Intervention description
+                </div>
+            </th>
+            <th class="panel">
+                <div class="panelElem textCol">
+                    Skills needed
+                </div>
+            </th>
+        </tr>
+        <tr>
+            <td class="panel">
+                <div class="panelElem textRow">
+                    {Work_note}
+                </div>
+            </td>
+            <td class="panel ">
+                <div class="panelElem panelElemIntDesc textRow">
+                    {Int_des}
+                </div>
+            </td>
+            <td class="panel">
+                <div class="panelElem">
+                    <div class="panelElem panelElemSkills textRow">
+                        {Skill}
+                    </div>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a class="button buttonEdit" href="javascript:Popup({Id})"> EDIT </a>
+            </td>
+            <td class="panel">
+                <div class="panelElem panelElemSMP">
+                    <div class="image" style="">
+                        <img alt="Folder" height="120" src="../img/cartella.png" width="120">
+                    </div>
+                    <div class="textImage textRow">
+                        Standard<br>Maintenance<br>Procedure<br>File(SMP)
+                    </div>
+                </div>
+            </td>
+            <td class="id" style="display:none;">{Id}</td>
+            <td class="strActivity" id="strAct" style="display:none;"></td>
+            <td class="strSkills" id="strSkl" style="display:none;"></td>
+            <td class="strWorkNote" id="strWorkNot" style="display:none;"></td>
+            <td>
+                <a class="button buttonForward" onclick="next()">FORWARD</a>
+            </td>
+        </tr>
+    </template>
+    </thead>
+    <tbody id="specifications-rows">
+    </tbody>
+    <tfoot>
+    <tr>
+        <th colspan="5">
+            <span id="request-status"></span>
+        </th>
+    </tr>
+    </tfoot>
+</table>
+
+<script>
+    const queryString = window.location.search;
+    const urlParams = new URLSearchParams(queryString);
+    const activity = urlParams.get('activity')
+    const week = urlParams.get('week')
+    const estimatedTime = urlParams.get('time')
+</script>
+
+<script>
+    function next() {
+        //mi prendo il campo id della riga che seleziono
+        $(".buttonForward").click(function () {
+            var $row = $(this).closest("tr");    // Trovo la riga 'tr' più vicina
+            var $text = $row.find(".id").text(); // Ne prendo il contenuto
+            var $strActivity = $row.find(".strActivity").text(); // Ne prendo il contenuto
+            var $strSkills = $row.find(".strSkills").text();
+            var $strWorkNote = $row.find(".strWorkNote").text();
+            location.href = "3_assignMaintainer.html?activity=" + activity + "&week=" + week + "&specifications=" + $text + "&strActivity=" + $strActivity + "&strSkills=" + $strSkills + "&time=" + estimatedTime
+                + "&strWorkNote=" + $strWorkNote;
+        });
+    }
+</script>
+
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+<script src="../JAVASCRIPT/2_script.js"></script>
+
+<script src="../JAVASCRIPT/2_BrowseController.js" type="text/javascript"></script>
+
+<script type="application/javascript">
+    $(document).ready(function () {
+        let controller = new BrowseController();
+        controller.initBrowseView(activity, week);
+    });
+</script>
+
+</body>
+</html>

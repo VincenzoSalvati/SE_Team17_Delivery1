@@ -1,0 +1,19 @@
+# noinspection SqlResolveForFile
+
+use project;
+
+#drop of all constraints in order to drop table (at the beginning of the script)
+alter table Specifications
+    drop constraint fk_specifications_activity;
+alter table Need
+    drop constraint fk_need_specification;
+alter table Need
+    drop constraint fk_need_skill;
+alter table Capacity
+    drop constraint fk_capacity_maintainer;
+alter table Capacity
+    drop constraint fk_capacity_skill;
+alter table InProgress
+    drop constraint fk_inprogress_maintainer;
+alter table InProgress
+    drop constraint fk_inprogress_specification;

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SqlDialectMappings">
+    <file url="file://$PROJECT_DIR$/src/JAVA/AssignMaintainerBrowseService.java" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/src/MySQL/1_create database" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/src/MySQL/2_drop tables" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/src/MySQL/3_create tables" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/src/MySQL/4_database initialization" dialect="MySQL" />
+    <file url="PROJECT" dialect="MySQL" />
+  </component>
+</project>
