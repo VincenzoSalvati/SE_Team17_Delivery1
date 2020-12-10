@@ -1,2 +1,0 @@
-drop database if exists project;
-create database project;

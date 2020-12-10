@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="SE_Team17_Delivery1:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/SE_Team17_Delivery1_jar</output-path>
+    <root id="archive" name="SE_Team17_Delivery1.jar">
+      <element id="module-output" name="SE_Team17_Delivery1" />
+      <element id="extracted-dir" path="$APPLICATION_CONFIG_DIR$/jdbc-drivers/MySQL ConnectorJ/8.0.21/mysql-connector-java-8.0.21.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>
