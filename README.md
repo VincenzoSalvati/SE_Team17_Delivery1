@@ -1,6 +1,7 @@
 # SE_Team17_Delivery1
 
-## Componenti del gruppo
+## Componenti del Team17
+
 Alex Sorrentino: a.sorrentino120@studenti.unisa.it
 
 Daniele Silvitielli: d.silvitelli@studenti.unisa.it
