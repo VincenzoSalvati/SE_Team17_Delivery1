@@ -18,3 +18,7 @@ Tomcat/webapps" del prorpio server Tomcat.
 
 Per utilizzare il proprio database è necessario compilare le variabili stringa nella directory "/src/JAVA/MySqlDbConnection.java" con il driver usato, l'indirizzo del database con la relativa porta, i campi di autenticazione dell'utente (username e password) e il nome associato al database.
 Inoltre, è necessario eseguire gli script presenti nel package "MySQL" per creare e inizializzare il database.
+
+## Architecture
+
+Il file "Diagram DB_delivery1.jpg" rappresenta la struttura del database utilizzato.
